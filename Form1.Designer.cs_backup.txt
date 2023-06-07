@@ -1,0 +1,91 @@
+using ZedGraph;
+
+namespace ZedGraph_for_RH850
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// 必需的设计器变量。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清理所有正在使用的资源。
+        /// </summary>
+        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private void CreatGraphWindow()
+        {
+            
+        }
+
+        #region Windows 窗体设计器生成的代码
+
+        /// <summary>
+        /// 设计器支持所需的方法 - 不要修改
+        /// 使用代码编辑器修改此方法的内容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.FFToutput = new ZedGraphControl();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox3.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // FFToutput
+            // 
+            this.FFToutput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FFToutput.Location = new System.Drawing.Point(6, 19);
+            this.FFToutput.Name = "FFToutput";
+            this.FFToutput.ScrollGrace = 0D;
+            this.FFToutput.ScrollMaxX = 0D;
+            this.FFToutput.ScrollMaxY = 0D;
+            this.FFToutput.ScrollMaxY2 = 0D;
+            this.FFToutput.ScrollMinX = 0D;
+            this.FFToutput.ScrollMinY = 0D;
+            this.FFToutput.ScrollMinY2 = 0D;
+            this.FFToutput.Size = new System.Drawing.Size(353, 272);
+            this.FFToutput.TabIndex = 1;
+            this.FFToutput.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FFToutput_MouseClick);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.FFToutput);
+            this.groupBox3.Location = new System.Drawing.Point(557, 12);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(365, 297);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Frequency Analysis";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(968, 462);
+            this.Controls.Add(this.groupBox3);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox3.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private ZedGraphControl FFToutput;
+        private System.Windows.Forms.GroupBox groupBox3;
+    }
+}
+
