@@ -40,8 +40,8 @@ namespace ZedGraph_for_RH850
             _outputPane.XAxis.Title.Text = "PWM Cycle";
 
             _outputPane.YAxis.Scale.Min = 0;
-            _outputPane.YAxis.Scale.MajorStep = 0.1;
-            _outputPane.YAxis.Scale.MinorStep = 0.1;
+            _outputPane.YAxis.Scale.MajorStep = 10;
+            _outputPane.YAxis.Scale.MinorStep = 5;
 
             _outputPane.XAxis.Scale.Format = "#";
             _outputPane.XAxis.Scale.Mag = 0;
